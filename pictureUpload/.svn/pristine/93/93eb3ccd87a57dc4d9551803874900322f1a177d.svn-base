@@ -1,0 +1,24 @@
+<pageEncoding="utf=8">
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>
+            hello world!
+        </h1>
+        <form action="http://localhost:8080/pictureUpload/uploadPicture/pictureUp.do" enctype="multipart/form-data" method="post" >  
+    <table>  
+        <tr>  
+            <td width="100" align="right">照片：</td>  
+            <td><input type="file" name="picture"/>   <input type="submit"></td>  
+            <input type="text" name="pOf">
+            <input type="text" name="type">
+        </tr>  
+        <tr>
+            <p>显示头像:</p><img src="http://localhost:8080/pic/1-1.jpg"/>
+        </tr>
+    </table>  
+</form>  
+    </body>
+</html>
