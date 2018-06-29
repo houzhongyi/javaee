@@ -9,9 +9,9 @@
         <result column="Age" property="age" jdbcType="INTEGER" />
     </resultMap>
     <!--自己配置的查询表所有数据的sql-->
-    <select id="selectAllUser" resultType="User">
-        select * FROM R_USER;
-      </select>
+    <select id="selectAllUser" resultMap="BaseResultMap">
+        select * FROM R_USER
+    </select>
 
 
     <sql id="Base_Column_List" >

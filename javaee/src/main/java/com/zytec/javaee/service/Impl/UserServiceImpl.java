@@ -9,14 +9,14 @@ import com.zytec.javaee.dao.IUserDao;
 import com.zytec.javaee.model.User;
 import com.zytec.javaee.service.UserService;
 
-@Service("userServiceImpl")
+@Service
 public class UserServiceImpl implements UserService{
 	@Autowired
     private IUserDao iUserDao;
 
     public List<User> getUser() {
-    	System.out.println("***********");
     	List<User> list = iUserDao.selectAllUser();
+    	System.out.println(list.size());
         return list;
     }
 
